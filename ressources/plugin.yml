@@ -1,0 +1,8 @@
+name: NoSwordDropping
+author: Dams333
+version: 1.0.0
+main: ch.dams333.noSwordDropping.NoSwordDropping
+commands:
+  choose:
+    description: Permet de choisir l item
+    permission: nosworddropping.commands.choose
