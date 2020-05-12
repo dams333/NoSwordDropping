@@ -19,6 +19,7 @@ public class ChooseCommand implements CommandExecutor {
             if(p.getInventory().getItemInHand() != null && p.getInventory().getItemInHand().hasItemMeta()){
                 main.getConfig().set("Name", p.getInventory().getItemInHand().getItemMeta().getDisplayName());
                 main.saveConfig();
+                p.sendMessage(ChatColor.DARK_GREEN + "Item sélectionné");
                 return true;
             }
             p.sendMessage(ChatColor.RED + "Veuillez choisir un item avec un nom particulier");
